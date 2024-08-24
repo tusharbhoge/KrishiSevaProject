@@ -8,6 +8,9 @@ import pc from "../assets/pc.png"
 import SupportAgentIcon from '@mui/icons-material/SupportAgent';
 import HandshakeIcon from '@mui/icons-material/Handshake';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
+import GroupsIcon from '@mui/icons-material/Groups';
+import ThumbUpAltIcon from '@mui/icons-material/ThumbUpAlt';
+import MonetizationOnIcon from '@mui/icons-material/MonetizationOn';
 
 const Home = () => {
 
@@ -69,12 +72,12 @@ const border="px-[25px] py-[10px] m-[20px] border  text-2xl border-white text-wh
    
         </div>
       </div>
-      <div className='bg-green-600 h-full p-10 '>
+      <div className='bg-green-600 h-[100vh] w-[100vw] p-10 '>
       <h1 className='text-center text-3xl text-gray-900 font-bold pt-5'>
         How KrishiSeva works
       </h1>
       
-      <h1  className=' py-5 text-center text-lg text-white font-normal'>
+      <h1  className=' py-5 text-center text-lg text-white font-bold'>
         Take a look at our platform demo
       </h1>
       <div className=' h-[75%] w-[100%] flex  justify-center gap-5'>
@@ -95,8 +98,68 @@ const border="px-[25px] py-[10px] m-[20px] border  text-2xl border-white text-wh
       </div>
       </div>
 
-    </div>
+      <div className='w-screen h-[80vh] bg-white'>
+      <div className='flex flex-row px-[15vw] gap-10 justify-around items-center m-0 p-0  pt-[150px]'>
+        <div className='bg-zinc-50 w-60 h-60  text-center items-center justify-center  shadow-[6px_6px_10px_rgba(0,0,0,0.5)]' >
+        
+        <div className='p-6'>
+          
+        <GroupsIcon style={{ fontSize: '70px' }} className='text-green-600 text-6xl '/>
+        </div>
+        <h1 className='font-semibold '>1,567,890</h1> 
+         <h1 className='font-normal text-sm'>Latest number of acquired customers</h1>
+
+           
+        </div>
+        <div className='bg-zinc-50 w-60 h-60 text-center items-center justify-center shadow-[6px_6px_10px_rgba(0,0,0,0.5)]'>
+        <div className='p-6'>
+          
+          <ThumbUpAltIcon style={{ fontSize: '70px' }} className='text-green-600 text-6xl'/>
+          </div>
+          <h1 className='font-semibold'>4 out of 5</h1>
+          <h1 className='font-normal text-sm'>Customers are satisfied with our services</h1>
+
+          
+        
+        </div>
+
+        <div className='bg-zinc-50 w-60 h-60 text-center items-center justify-center shadow-[6px_6px_10px_rgba(0,0,0,0.5)]'>
+        <div className='p-6'>
+          
+          <MonetizationOnIcon style={{ fontSize: '70px' }} className='text-green-600 text-6xl'/>
+          </div>
+          <h1 className='font-semibold'>16% of Crop Value</h1>
+          <h1 className='font-normal text-sm'>Average Equipment investments</h1>
+          
    
+        </div>
+      </div>
+    </div>
+
+
+      <div className='w-screen h-[80vh] bg-gray-50'>
+        <h1 className='text-center text-3xl text-gray-900 font-bold pt-5'>
+        OUR SERVICES
+        </h1>
+      
+        <h1  className=' py-5 text-center text-lg text-black'>
+        Following are the services that KrishiSeva Market provides for farmers :
+        </h1>
+        
+
+      </div>
+    
+    
+    
+    
+    
+    
+    
+    </div>
+
+    
+    
+    
     </>
   )
 }
