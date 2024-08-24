@@ -5,17 +5,17 @@ import gsap from 'gsap';
 
 const Navbar = () => {
     const [scrollY, setScrollY] = useState(0);
-    const [bgOpacity, setBgOpacity] = useState("bg-opacity-100");
+    const [top, setTop] = useState("top-0");
 
     useEffect(() => {
         const handleScroll = () => {
             const currentScroll = window.scrollY;
             setScrollY(currentScroll);
 
-            if (currentScroll > 20) {
-                setBgOpacity('bg-opacity-70');
+            if (currentScroll > 10) {
+                setTop('top-[-150px]');
             } else {
-                setBgOpacity('bg-opacity-100');
+                setTop('top-0');
             }
         };
 
@@ -31,7 +31,7 @@ const Navbar = () => {
     const hoverEffect = "hover:font-bold";
 
     return (
-        <nav className={`w-full p-5 pr-[100px] pl-[100px] flex justify-between fixed z-40 top-0 left-0 bg-white transition-all duration-300 ${bgOpacity}`}>
+        <nav className={`w-full p-5 pr-[100px] pl-[100px] flex top- justify-between fixed z-40 ${top} left-0 bg-white transition-all duration-300 `}>
             <img src={logo} alt="logo" className='w-40' />
             <div className='w-2/5 flex justify-around items-center font-semibold text-xl text-green-700'>
                 <Button title="Home" to="/" style={hoverEffect} />
