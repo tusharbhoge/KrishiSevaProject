@@ -12,7 +12,7 @@ function App() {
   return (
     <>
       <div>
-      <Authentication />
+      
       <Navbar />
       <Outlet /> {/* Renders the matched child route */}
     </div>
