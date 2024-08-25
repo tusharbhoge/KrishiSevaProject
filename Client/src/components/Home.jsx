@@ -3,7 +3,7 @@ import bgImage from "../assets/homeImage2.jpeg"
 import Button from './Button'
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react"
-import Authentication from './Authentication';
+import Authentication from './Authentication/Authentication1';
 import pc from "../assets/pc.png"
 import SupportAgentIcon from '@mui/icons-material/SupportAgent';
 import HandshakeIcon from '@mui/icons-material/Handshake';

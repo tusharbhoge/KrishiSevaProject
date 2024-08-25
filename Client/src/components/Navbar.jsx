@@ -31,7 +31,7 @@ const Navbar = () => {
     const hoverEffect = "hover:font-bold";
 
     return (
-        <nav className={`w-full p-5 pr-[100px] pl-[100px] flex top- justify-between fixed z-40 ${top} left-0 bg-white transition-all duration-300 `}>
+        <nav className={`w-full p-5 pr-[100px] pl-[100px] flex  justify-between fixed z-40 ${top} left-0 bg-white transition-all duration-300 `}>
             <img src={logo} alt="logo" className='w-40' />
             <div className='w-2/5 flex justify-around items-center font-semibold text-xl text-green-700'>
                 <Button title="Home" to="/" style={hoverEffect} />
