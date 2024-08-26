@@ -10,7 +10,7 @@ const AddProduct = () => {
     <div className='bg-gray-100 w-screen h-auto flex justify-center'>
 
       <div className='h-auto w-[70%] bg-white m-[150px] px-16  py-12 rounded-xl text-lg'  >
-
+        
         <div className='   h-24  mx-auto  border-b-2'>
               <h1 className='text-black font-bold pb-2  text-2xl '>
                 Add Equipment 
