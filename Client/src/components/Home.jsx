@@ -155,7 +155,7 @@ const border="px-[25px] py-[10px] m-[20px] border  text-2xl border-white text-wh
 
 
     </div>
-    <div className='w-screen h-[100vh] bg-gray-50 flex flex-col justify-center items-center'>
+    <div className='w-screen h-[120vh] bg-gray-50 flex flex-col justify-center items-center'>
         <h1 className='text-center text-3xl text-gray-900 font-bold pt-5'>
         OUR SERVICES
         </h1>
