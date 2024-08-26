@@ -11,6 +11,23 @@ import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import GroupsIcon from '@mui/icons-material/Groups';
 import ThumbUpAltIcon from '@mui/icons-material/ThumbUpAlt';
 import MonetizationOnIcon from '@mui/icons-material/MonetizationOn';
+import appicon from "../assets/appicon.png"
+
+
+
+const Scard = (props) => {
+  return (
+    <>
+    <div className='h-[150px] w-[500px] bg-green-700  text-white text-xl flex flex-col justify-center items-center px-5 rounded-xl text-left '>
+      <h1 className='text-2xl pb-2 font-semibold'>{props.title}</h1>
+      <p>{props.description}</p>
+
+    </div>
+    </>
+  )
+}
+
+
 
 const Home = () => {
 
@@ -29,7 +46,7 @@ const border="px-[25px] py-[10px] m-[20px] border  text-2xl border-white text-wh
         </div>
  
     </div>
-    <div className='h-[90vh] w-full bg-gray-100 font-bold py-5 '>
+    <div className='h-auto w-full bg-gray-100 font-bold py-5 '>
       <h1 className='text-center text-3xl text-green-600 p-[20px]'>
         WHAT WE OFFER
       </h1> 
@@ -93,13 +110,13 @@ const border="px-[25px] py-[10px] m-[20px] border  text-2xl border-white text-wh
       </div>
 
       <div className=' h-[100%] w-[50%] flex justify-center items-center '>
-        <img className='h-[320px] ' src={pc} alt="" />
+        <img className='h-[320px] ' src={pc} alt="pc" />
       </div>
       </div>
       </div>
 
-      <div className='w-screen h-[80vh] bg-white'>
-      <div className='flex flex-row px-[15vw] gap-10 justify-around items-center m-0 p-0  pt-[150px]'>
+      <div className='w-screen h-[60vh] bg-white flex justify-center items-center '>
+      <div className='flex flex-row  gap-32 justify-around items-center '>
         <div className='bg-zinc-50 w-60 h-60  text-center items-center justify-center  shadow-[6px_6px_10px_rgba(0,0,0,0.5)]' >
         
         <div className='p-6'>
@@ -137,7 +154,8 @@ const border="px-[25px] py-[10px] m-[20px] border  text-2xl border-white text-wh
     </div>
 
 
-      <div className='w-screen h-[80vh] bg-gray-50'>
+    </div>
+    <div className='w-screen h-[100vh] bg-gray-50 flex flex-col justify-center items-center'>
         <h1 className='text-center text-3xl text-gray-900 font-bold pt-5'>
         OUR SERVICES
         </h1>
@@ -145,17 +163,41 @@ const border="px-[25px] py-[10px] m-[20px] border  text-2xl border-white text-wh
         <h1  className=' py-5 text-center text-lg text-black'>
         Following are the services that KrishiSeva Market provides for farmers :
         </h1>
+        <div className='h-[150px] w-screen flex justify-center items-center gap-24 my-5 '>
+          <Scard 
+          title="Check Availabilities"
+          description="Check  the available time and slots for the required equipments in order to book them."
+          />
+          <Scard 
+          title="Book for certain timeline"
+          description="Check  the available time and slots for the required equipments in order to book them."
+          />
+        </div>
+        <div className='h-[150px] w-screen flex justify-center items-center gap-24 my-5 '>
+          <Scard 
+          title=" Browse and Filter"
+          description="Explore varieties of farming equipment, also filter on basis of various parameters."
+          />
+          <div className='w-[150px] h-[150px] flex justify-center items-center'><img src={appicon} alt="" /></div>
+          <Scard 
+          title="Connect through Chats"
+          description="Owners and customers connect through chats and can send voice messages to make deals."
+          />
+        </div>
+        <div className='h-[150px] w-screen flex justify-center items-center gap-24 my-5 '>
+          <Scard 
+          title="Post Ads"
+          description="A farmer creates a profile advertise ments are posted for agricultural equipment to rent for off-seasons."
+          />
+          <Scard 
+          title="Notifications on updates"
+          description="Get notified through the related information updates."
+          />
+        </div>
         
-
       </div>
-    
-    
-    
-    
-    
-    
-    
-    </div>
+      
+
 
     
     

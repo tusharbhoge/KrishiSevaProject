@@ -11,7 +11,7 @@ const Authentication2 = () => {
   return (
     <>
     <div className='h-auto w-screen bg-cover bg-center  flex justify-center items-center' style={{ backgroundImage:`url(${bgImage})`}}>
-    <div className='w-screen h-screen flex justify-center items-center z-50   bg-black bg-opacity-50'>
+    <div className='w-screen h-screen flex justify-center items-center z-50   bg-black bg-opacity-75'>
     <div className='authContainer h-[100vh] w-[50vw] bg-cover bg-center  flex justify-center items-center ' style={{ backgroundImage:`url(${authBgImage})`}}>
       <div className='h-full w-full bg-gray-300 bg-opacity-60 flex flex-col justify-center items-center'>
           <div className='h-[110px] w-[110px] bg-white rounded-full flex justify-center items-center   '>
