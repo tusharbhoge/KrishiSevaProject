@@ -1,8 +1,13 @@
+
 import React from 'react'
+import Button from "../Button"
+import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline';
 
 
 
 import  { useState } from 'react';
+
+
 
 function SimpleDropdown() {
   const [isOpen, setIsOpen] = useState(false);
@@ -47,6 +52,8 @@ function SimpleDropdown() {
 
 
 const AddProduct2 = () => {
+
+  const border = "px-4 mt-16  py-2 border border-green-600 text-green-700 bg-white rounded-[15px] hover:bg-green-700 hover:text-white";
   return (
     <>
   <div className='bg-gray-100 w-screen h-auto flex justify-center'>
@@ -74,12 +81,17 @@ const AddProduct2 = () => {
           <input type="date" className="border-2 border-gray-400 rounded-lg p-3 "/>
         </div>
       </div>
-      <h1 className='pt-3 font-bold'>
-        Rental PLan Details
-      </h1>
-
-
-     <div className='flex w-full'>
+      <div className='w-full flex justify-between items-center py-4'>
+          <h1 className='pt-3 font-bold'>
+             Rental PLan Details
+          </h1>
+          <div className='flex flex-col'>
+          <Button title="+Add" style="text-green-600 font-bold "/>
+       
+          </div>
+      </div>
+     
+     <div className='flex w-full my-3'>
       <div className='w-[50%] pb-2 '>
         <h1>
           Select Plan
@@ -91,11 +103,24 @@ const AddProduct2 = () => {
         <h1>
           Amount in Rs
         </h1>
-        <input type="text" className='  border-2 w-full rounded-lg py-2 px-4 my-2 focus:outline-none'/>
+        <div className='flex justify-between items-center'>
+        <input type="text" className='  border-2 w-full rounded-lg py-2 px-4 my-2 mr-2 focus:outline-none'/>
+          <button>
+          <DeleteOutlineIcon className='text-red-500  ' />
+
+          </button>
+         
+        </div>
+        
+        <div className='w-full h-12 flex items-end justify-end '>
+          <Button title="Next" to="/addImage" style={border}   />
+        </div>
+       
+       
       </div>
-
+    
      </div>
-
+   
 
 
 

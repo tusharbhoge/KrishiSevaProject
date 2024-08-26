@@ -27,22 +27,18 @@ const Scard = (props) => {
   )
 }
 
-
-
 const Home = () => {
 
-    
 const border="px-[25px] py-[10px] m-[20px] border  text-2xl border-white text-white font-bold bg-green-600 rounded hover:bg-green-700 hover:text-white"
 
-
   return (
-    <>
+  <>
     <div className='h-screen w-screen bg-cover bg-center  flex justify-center items-center' style={{ backgroundImage:`url(${bgImage})`}}>
         <div className='h-[100vh] w-[100vw] bg-black bg-opacity-60 flex flex-col justify-center items-center text-center text-white p-[100px] text-3xl '>
                 <h2 className='pb-8  '>Namaste! Welcome to KrishiSeva.</h2>
                 <h1 className='text-4xl font-bold  '><span className='text-green-600 text-6xl leading-snug shadow-md'>Farming Equipments </span><br />at reasonable and affordable prices.</h1>
                 <h3 className='text-2xl p-[20px] '>start now with just one click</h3>
-                <Button title="Book Now" style={border}/>
+                <Button title="Book Now" style={border} to="bookNow"/>
         </div>
  
     </div>
@@ -137,7 +133,6 @@ const border="px-[25px] py-[10px] m-[20px] border  text-2xl border-white text-wh
           <h1 className='font-normal text-sm'>Customers are satisfied with our services</h1>
 
           
-        
         </div>
 
         <div className='bg-zinc-50 w-60 h-60 text-center items-center justify-center shadow-[6px_6px_10px_rgba(0,0,0,0.5)]'>
@@ -148,7 +143,6 @@ const border="px-[25px] py-[10px] m-[20px] border  text-2xl border-white text-wh
           <h1 className='font-semibold'>16% of Crop Value</h1>
           <h1 className='font-normal text-sm'>Average Equipment investments</h1>
           
-   
         </div>
       </div>
     </div>
